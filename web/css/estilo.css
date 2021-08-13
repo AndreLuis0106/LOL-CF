@@ -58,7 +58,13 @@ p {
 h1 {
   font-size: 40px;
   text-align: center;
-  color: black;
+  color: white;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+  color: white;
   font-weight: bold;
 }
 
@@ -70,4 +76,62 @@ h1 {
 
 .container img {
   margin-top: 30px;
+}
+
+.container div p {
+  text-align: center;
+}
+
+/*Footer*/
+
+.footer {
+  width: 100%;
+  background: rgb(2, 2, 29);
+  padding: 20px;
+}
+
+.footer h3 {
+  font-size: 18px;
+  line-height: 25px;
+  color: #fec63e;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.footer_redes ul li {
+  display: inline-block;
+}
+
+.footer_redes ul li a {
+  border: 10px solid #fec63e;
+  color: #fec63e;
+  display: block;
+  padding: 6px;
+}
+
+.tabela {
+  color: #fec63e;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+/*Javascript*/
+
+[data-slide] {
+  position: relative;
+}
+
+[data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+
+[data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
 }
